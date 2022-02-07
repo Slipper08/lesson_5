@@ -1,0 +1,119 @@
+/* &display=swap */
+@import 'null.css';
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap'); */
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/Merriweather-Regular.woff2') format('woff2'), url('../fonts/Merriweather-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/Merriweather-Bold.woff2') format('woff2'), url('../fonts/Merriweather-Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'с';
+	src: url('../fonts/Merriweather-Black.woff2') format('woff2'), url('../fonts/Merriweather-Black.woff') format('woff');
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+
+/* ======================= */
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* ======================= */
+body{
+	font-family: Merriweather;
+	font-size: 20px;
+}
+
+h1{
+	font-weight: 900;
+	font-size: 36px;
+	margin: 0 0 40px 0;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 8px;
+}
+h2{
+	font-weight: 700;
+	font-size: 28px;
+	margin: 0 0 40px 0;
+	text-transform: uppercase;
+	text-shadow: 5px 2px 10px rgba(10, 3, 3, 0.842);
+	letter-spacing: 5px;
+}
+.menu-link li{
+	display: inline-block;
+	text-decoration: underline;
+	font-size: 16px;
+	color: rgb(27, 26, 26);
+	margin: 0 10px 0 0;
+	font-style: italic;
+}
+.menu-link{
+	margin: 0 0 40px 0;
+}
+.second-link{
+	color: chartreuse;
+	font-size: 20px;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+	display: inline-block;
+	margin: 0 0 30px 0;
+	text-shadow: 10px 2px 15px rgba(128, 255, 0, 0.89);
+}
+img, p{
+	margin: 0 0 20px 0;
+}
+p{
+	line-height: 1.5;
+}
+/* немного padding */
+.img-block{
+	text-align: center;
+	border: 1px solid rgb(2, 245, 233);
+	padding: 20px 0 0 0;
+}
+.nsclassification{
+	color: rgb(4, 4, 110);
+	font-weight: 700;
+	font-style: italic;
+}
+.general-list{
+	margin: 0 0 20px 0;
+}
+.general-list li{
+	font-style: italic;
+	color: rgb(7, 243, 38);
+	line-height: 1.8;
+}
+/* горизонтальная прокрутка. Также демонстрация схлопывания margin. Схлопывается этот margin с margin'ом подвала.
+Второй margin перекрывает первый */
+.overflow-example{
+	height: 500px;
+	overflow: auto;
+	margin: 0 0 50px 0;
+}
+/* вариант с вертикальной прокруткой */
+.margin-minus-example{
+	white-space: nowrap;
+	overflow: auto;
+}
+footer{
+	text-align: center;
+	font-size: 16px;
+	color: rgb(255, 0, 21);
+	margin: 100px 0 0 0;
+}
